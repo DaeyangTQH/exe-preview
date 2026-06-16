@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hồn Tích Đất Việt — Mô hình di sản Việt Nam in 3D từ nhựa tái chế</title>
+  <meta name="description" content="Hồn Tích Đất Việt — mô hình địa danh Việt Nam in 3D từ nhựa tái chế. Quét mã QR trên mỗi mô hình để mở khóa câu chuyện, dòng thời gian và audio về từng di sản." />
+  <meta property="og:title" content="Hồn Tích Đất Việt — Mỗi món lưu niệm mở ra một câu chuyện Việt Nam" />
+  <meta property="og:description" content="Mô hình địa danh Việt Nam in 3D từ nhựa tái chế. Quét QR để khám phá câu chuyện sau mỗi địa danh." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/hero-collection.png" />
+  <meta name="theme-color" content="#f6f2ea" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Bỏ qua, tới nội dung chính</a>
+
+  <header class="site-header" data-header>
+    <div class="container nav">
+      <a class="wordmark" href="#top" aria-label="Hồn Tích Đất Việt trang chủ">
+        Hồn Tích Đất Việt
+      </a>
+      <nav class="nav-links" aria-label="Điều hướng chính">
+        <a href="#how">Cách hoạt động</a>
+        <a href="#why">Vì sao khác biệt</a>
+        <a href="#collection">Bộ sưu tập</a>
+        <a href="#story">Câu chuyện QR</a>
+      </nav>
+      <a class="btn btn-nav" href="#collection">
+        <span class="lbl-full">Khám phá bộ sưu tập</span>
+        <span class="lbl-short">Bộ sưu tập</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+    <span id="top"></span>
+
+    <!-- HERO (video) -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-video">
+        <video
+          data-hero-video
+          autoplay muted loop playsinline preload="metadata"
+          poster="assets/img/story-hoi-an.jpg"
+          aria-hidden="true"
+        >
+          <source src="assets/Vietnam-video.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-scrim" aria-hidden="true"></div>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="kicker" data-reveal>Hồn Tích Đất Việt · Di sản Việt Nam</p>
+          <h1 id="hero-title" class="display" data-reveal>
+            Mô hình địa danh Việt Nam, <em>in 3D</em> từ nhựa tái chế.
+          </h1>
+          <p class="lede" data-reveal>
+            Quét mã QR trên mỗi mô hình để mở khóa câu chuyện, dòng thời gian và
+            audio về địa danh — không cần cài app, chỉ cần chiếc điện thoại trong tay.
+          </p>
+          <p class="hero-en" data-reveal>
+            Vietnamese souvenir models made from recycled plastic.
+            Scan the QR code to discover the stories behind each destination.
+          </p>
+          <div class="hero-actions" data-reveal>
+            <a class="btn btn-primary" href="#collection">Khám phá bộ sưu tập</a>
+            <a class="btn btn-ghost" href="#how">Xem QR hoạt động thế nào</a>
+          </div>
+          <dl class="hero-facts" data-reveal>
+            <div><dt>6</dt><dd>địa danh trong bộ sưu tập khởi đầu</dd></div>
+            <div><dt>100%</dt><dd>nhựa tái chế, in 3D thủ công</dd></div>
+            <div><dt>0</dt><dd>app cần cài — chỉ quét là mở</dd></div>
+          </dl>
+        </div>
+      </div>
+
+      <button class="hero-video-toggle" type="button" data-video-toggle aria-pressed="true">
+        <span class="vt-icon" aria-hidden="true"></span>
+        <span class="vt-label">Tạm dừng video</span>
+      </button>
+    </section>
+
+    <!-- SHOWCASE: the physical object -->
+    <section class="showcase" aria-label="Sản phẩm vật lý">
+      <div class="container">
+        <figure class="showcase-figure" data-reveal>
+          <img
+            src="assets/img/hero-collection.png"
+            alt="Ba mô hình in 3D từ nhựa tái chế màu gỗ sơn son: Chùa Một Cột, Chùa Cầu Hội An và Tháp Rùa Hồ Gươm, đặt trên bệ trưng bày."
+            width="1536" height="1024" loading="lazy" decoding="async"
+          />
+          <figcaption>Mỗi mô hình là một địa danh — in 3D từ nhựa tái chế, hoàn thiện thủ công.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- FROM OBJECT TO EXPERIENCE -->
+    <section id="how" class="section how" aria-labelledby="how-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">Từ vật thể đến trải nghiệm</p>
+          <h2 class="headline" data-reveal>Một món đồ cầm trên tay, một câu chuyện mở ra sau lưng nó.</h2>
+          <p class="section-intro" data-reveal>
+            Sản phẩm vật lý là điểm vào. Mã QR là cánh cửa. Bạn không mua một món
+            lưu niệm — bạn bắt đầu một bộ sưu tập di sản.
+          </p>
+        </header>
+
+        <ol class="steps" aria-label="Ba bước trải nghiệm">
+          <li class="step" data-reveal>
+            <span class="step-no">01</span>
+            <div class="step-body">
+              <h3 class="step-title">Chọn mô hình</h3>
+              <p>Mỗi mô hình là một địa danh Việt Nam, in 3D từ nhựa tái chế, hoàn thiện thủ công.</p>
+            </div>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step-no">02</span>
+            <div class="step-body">
+              <h3 class="step-title">Quét mã QR</h3>
+              <p>Đưa điện thoại lại gần. Không cài app, không tài khoản — trang câu chuyện mở ngay.</p>
+            </div>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step-no">03</span>
+            <div class="step-body">
+              <h3 class="step-title">Mở khóa câu chuyện</h3>
+              <p>Dòng thời gian, bản đồ, fun facts, audio một phút và một quiz nhỏ về địa danh.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- COMPARISON / USP -->
+    <section id="why" class="section why panel" aria-labelledby="why-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">Vì sao khác biệt</p>
+          <h2 id="why-title" class="headline" data-reveal>Không phải quà lưu niệm có QR. <em>Là một nền tảng kể chuyện văn hóa.</em></h2>
+        </header>
+
+        <div class="compare" role="table" aria-label="So sánh quà lưu niệm thường và Heritage Souvenir">
+          <div class="compare-col compare-old" data-reveal>
+            <h3 class="compare-name">Quà lưu niệm thường</h3>
+            <ul class="compare-list">
+              <li><span class="mark mark-x" aria-hidden="true"></span> Chỉ để trang trí</li>
+              <li><span class="mark mark-x" aria-hidden="true"></span> Không có câu chuyện</li>
+              <li><span class="mark mark-x" aria-hidden="true"></span> Ít giá trị giáo dục</li>
+              <li><span class="mark mark-x" aria-hidden="true"></span> Nhựa thường, dùng một lần</li>
+            </ul>
+          </div>
+          <div class="compare-col compare-new" data-reveal>
+            <h3 class="compare-name">Hồn Tích Đất Việt</h3>
+            <ul class="compare-list">
+              <li><span class="mark mark-check" aria-hidden="true"></span> Kể chuyện tương tác</li>
+              <li><span class="mark mark-check" aria-hidden="true"></span> Trải nghiệm văn hóa qua QR</li>
+              <li><span class="mark mark-check" aria-hidden="true"></span> Có giá trị giáo dục</li>
+              <li><span class="mark mark-check" aria-hidden="true"></span> Vật liệu tái chế, sưu tập lâu dài</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COLLECTION -->
+    <section id="collection" class="section collection" aria-labelledby="collection-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">Vietnam Heritage Collection</p>
+          <h2 id="collection-title" class="headline" data-reveal>Bộ sưu tập khởi đầu — sáu di sản Việt Nam.</h2>
+          <p class="section-intro" data-reveal>
+            Gom đủ bộ là gom đủ một dải đất nước. Mỗi mô hình mở ra một trang câu
+            chuyện riêng khi bạn quét mã.
+          </p>
+        </header>
+
+        <ul class="collection-grid">
+          <li class="place-card" data-reveal>
+            <div class="place-media">
+              <img src="assets/img/model-ho-guom.png" alt="Mô hình in 3D Tháp Rùa giữa Hồ Gươm, Hà Nội, màu gỗ sơn son trên bệ trưng bày trắng." width="1536" height="1024" loading="lazy" decoding="async" />
+              <span class="frame-corner" aria-hidden="true"></span>
+            </div>
+            <div class="place-body">
+              <h3 class="place-name">Hồ Gươm</h3>
+              <p class="place-desc">Hà Nội · Tháp Rùa và truyền thuyết trả gươm.</p>
+            </div>
+          </li>
+          <li class="place-card" data-reveal>
+            <div class="place-media">
+              <img src="assets/img/model-chua-mot-cot.png" alt="Mô hình in 3D Chùa Một Cột, Hà Nội, gác chuông gỗ trên một trụ giữa hồ vuông." width="1536" height="1024" loading="lazy" decoding="async" />
+              <span class="frame-corner" aria-hidden="true"></span>
+            </div>
+            <div class="place-body">
+              <h3 class="place-name">Chùa Một Cột</h3>
+              <p class="place-desc">Hà Nội · Đóa sen vươn lên từ mặt nước.</p>
+            </div>
+          </li>
+          <li class="place-card" data-reveal>
+            <div class="place-media">
+              <img src="assets/img/model-hoi-an.png" alt="Mô hình in 3D Chùa Cầu Hội An, cây cầu có mái ngói cong, màu gỗ sơn son." width="1536" height="1024" loading="lazy" decoding="async" />
+              <span class="frame-corner" aria-hidden="true"></span>
+            </div>
+            <div class="place-body">
+              <h3 class="place-name">Hội An</h3>
+              <p class="place-desc">Quảng Nam · Chùa Cầu và phố cổ đèn lồng.</p>
+            </div>
+          </li>
+          <li class="place-card" data-reveal>
+            <div class="place-media">
+              <img src="assets/img/model-hue.png" alt="Mô hình in 3D Ngọ Môn, cổng chính Kinh thành Huế, với lầu Ngũ Phụng nhiều mái." width="1536" height="1024" loading="lazy" decoding="async" />
+              <span class="frame-corner" aria-hidden="true"></span>
+            </div>
+            <div class="place-body">
+              <h3 class="place-name">Huế</h3>
+              <p class="place-desc">Thừa Thiên Huế · Ngọ Môn và Kinh thành triều Nguyễn.</p>
+            </div>
+          </li>
+          <li class="place-card" data-reveal>
+            <div class="place-media">
+              <img src="assets/img/model-trang-an.png" alt="Mô hình in 3D quần thể núi đá vôi Tràng An, Ninh Bình, với dòng sông và chiếc thuyền nhỏ." width="1536" height="1024" loading="lazy" decoding="async" />
+              <span class="frame-corner" aria-hidden="true"></span>
+            </div>
+            <div class="place-body">
+              <h3 class="place-name">Tràng An</h3>
+              <p class="place-desc">Ninh Bình · Sông nước luồn giữa núi đá vôi.</p>
+            </div>
+          </li>
+          <li class="place-card" data-reveal>
+            <div class="place-media">
+              <img src="assets/img/model-ha-long.png" alt="Mô hình in 3D Vịnh Hạ Long với các đảo đá vôi và một chiếc thuyền buồm nhỏ." width="1536" height="1024" loading="lazy" decoding="async" />
+              <span class="frame-corner" aria-hidden="true"></span>
+            </div>
+            <div class="place-body">
+              <h3 class="place-name">Vịnh Hạ Long</h3>
+              <p class="place-desc">Quảng Ninh · Hàng nghìn đảo đá giữa sóng nước.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- QR STORY PREVIEW -->
+    <section id="story" class="section story" aria-labelledby="story-title">
+      <div class="container story-grid">
+        <figure class="story-photo" data-reveal>
+          <img src="assets/img/story-hoi-an.jpg" alt="Phố cổ Hội An lúc hoàng hôn, đèn lồng lụa đỏ và vàng soi bóng xuống dòng sông Thu Bồn." width="1536" height="1024" loading="lazy" decoding="async" />
+          <figcaption>Địa danh thật, đứng sau vật thể bạn cầm trên tay.</figcaption>
+        </figure>
+
+        <div class="story-panel" data-reveal>
+          <header class="story-panel-head">
+            <p class="kicker">Trang câu chuyện QR</p>
+            <h2 id="story-title" class="title">Hội An</h2>
+            <p class="story-sub">Khi quét mã, đây là thứ mở ra — không phải một trang web, mà một câu chuyện.</p>
+          </header>
+
+          <ol class="timeline" aria-label="Dòng thời gian Hội An">
+            <li><span class="t-year">TK 15</span><span class="t-text">Thương cảng quốc tế sầm uất bên sông Thu Bồn.</span></li>
+            <li><span class="t-year">TK 17</span><span class="t-text">Người Nhật dựng Chùa Cầu nối hai khu phố.</span></li>
+            <li><span class="t-year">1999</span><span class="t-text">UNESCO công nhận Di sản Văn hóa Thế giới.</span></li>
+          </ol>
+
+          <div class="funfact">
+            <span class="funfact-label">Fun fact</span>
+            <p>Hơn 1.000 đèn lồng lụa được thắp mỗi đêm rằm, khi cả phố cổ tắt điện.</p>
+          </div>
+
+          <div class="story-foot">
+            <button type="button" class="audio-row" aria-label="Nghe câu chuyện audio một phút về Hội An">
+              <span class="audio-play" aria-hidden="true"></span>
+              <span class="audio-text"><strong>Audio · 1 phút</strong><small>Kể chuyện Hội An</small></span>
+              <span class="audio-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+            </button>
+            <div class="qr" aria-hidden="true">
+              <svg viewBox="0 0 100 100" role="img" width="76" height="76">
+                <rect width="100" height="100" fill="#ffffff"/>
+                <g fill="#000000">
+                  <path d="M8 8h22v22H8zM14 14v10h10V14z"/>
+                  <path d="M70 8h22v22H70zM76 14v10h10V14z"/>
+                  <path d="M8 70h22v22H8zM14 76v10h10V76z"/>
+                  <rect x="40" y="10" width="6" height="6"/><rect x="52" y="10" width="6" height="6"/>
+                  <rect x="40" y="22" width="6" height="6"/><rect x="58" y="22" width="6" height="6"/>
+                  <rect x="34" y="34" width="6" height="6"/><rect x="46" y="34" width="6" height="6"/><rect x="64" y="34" width="6" height="6"/>
+                  <rect x="40" y="46" width="6" height="6"/><rect x="58" y="46" width="6" height="6"/><rect x="70" y="46" width="6" height="6"/><rect x="82" y="46" width="6" height="6"/>
+                  <rect x="10" y="46" width="6" height="6"/><rect x="22" y="46" width="6" height="6"/>
+                  <rect x="46" y="58" width="6" height="6"/><rect x="64" y="58" width="6" height="6"/><rect x="76" y="58" width="6" height="6"/>
+                  <rect x="40" y="70" width="6" height="6"/><rect x="52" y="70" width="6" height="6"/><rect x="70" y="70" width="6" height="6"/><rect x="82" y="70" width="6" height="6"/>
+                  <rect x="40" y="82" width="6" height="6"/><rect x="58" y="82" width="6" height="6"/><rect x="76" y="82" width="6" height="6"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MATERIALS & CRAFT -->
+    <section id="craft" class="section craft panel" aria-labelledby="craft-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker">Chất liệu &amp; thủ công</p>
+          <h2 id="craft-title" class="headline" data-reveal>Tái sinh từ nhựa, hoàn thiện bằng tay.</h2>
+        </header>
+        <div class="craft-row">
+          <article class="craft-item" data-reveal>
+            <span class="craft-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 19H4.5a2 2 0 0 1-1.7-3l2.2-3.7"/><path d="m10 9-3 5"/><path d="M14 5.5 12 2 9.8 5.7"/><path d="M21 12.5 18.8 16H14"/><path d="m17 9 3 5"/><path d="M10 19h4l-2 3.5"/></svg>
+            </span>
+            <h3>Nhựa tái chế</h3>
+            <p>Vật liệu thu hồi được làm sạch và in 3D, cho mỗi mô hình một vòng đời mới.</p>
+          </article>
+          <article class="craft-item" data-reveal>
+            <span class="craft-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11V5.5a1.5 1.5 0 0 1 3 0V10"/><path d="M12 10V4.5a1.5 1.5 0 0 1 3 0V11"/><path d="M15 11V6.5a1.5 1.5 0 0 1 3 0V14a6 6 0 0 1-6 6h-1.5a5 5 0 0 1-4-2l-2.6-3.4a1.5 1.5 0 0 1 2.3-1.9L9 14"/></svg>
+            </span>
+            <h3>Hoàn thiện thủ công</h3>
+            <p>Từng chi tiết mái cong, hoa văn được làm sạch và chỉnh bằng tay trước khi đóng gói.</p>
+          </article>
+          <article class="craft-item" data-reveal>
+            <span class="craft-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 4 13c0-5 4-9 9-10 0 0-1 4 1 6 1.5 1.5 4 2 4 5a6 6 0 0 1-6 6Z"/><path d="M11 20c0-4 1.5-7 4-9"/></svg>
+            </span>
+            <h3>Sưu tập bền lâu</h3>
+            <p>Thiết kế để trưng bày năm này qua năm khác — và để gom đủ cả bộ di sản.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOSING CTA -->
+    <section class="section closing" aria-labelledby="closing-title">
+      <div class="motif-divider closing-divider" aria-hidden="true"><span></span></div>
+      <div class="container closing-inner">
+        <h2 id="closing-title" class="display" data-reveal>Bắt đầu bộ sưu tập di sản của riêng bạn.</h2>
+        <p class="section-intro" data-reveal>Mang một địa danh Việt Nam về nhà — và mở khóa câu chuyện đứng sau nó.</p>
+        <div class="hero-actions" data-reveal>
+          <a class="btn btn-primary" href="#collection">Xem bộ sưu tập</a>
+          <a class="btn btn-ghost" href="#story">Trải nghiệm câu chuyện QR</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="roofline" aria-hidden="true"></div>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="wordmark wordmark-light" href="#top">Hồn Tích Đất Việt</a>
+        <p>Mỗi món lưu niệm mở ra một câu chuyện Việt Nam.</p>
+      </div>
+      <nav class="footer-col" aria-label="Bộ sưu tập">
+        <h4>Bộ sưu tập</h4>
+        <a href="#collection">Vietnam Heritage Collection</a>
+        <a href="#story">Câu chuyện QR</a>
+        <a href="#how">Cách hoạt động</a>
+      </nav>
+      <nav class="footer-col" aria-label="Thương hiệu">
+        <h4>Thương hiệu</h4>
+        <a href="#why">Vì sao khác biệt</a>
+        <a href="#craft">Chất liệu &amp; thủ công</a>
+      </nav>
+      <div class="footer-col">
+        <h4>Liên hệ</h4>
+        <a href="mailto:hello@hontichdatviet.vn">hello@hontichdatviet.vn</a>
+        <a href="#top">Hợp tác &amp; phân phối</a>
+      </div>
+    </div>
+    <div class="container footer-base">
+      <p>© 2026 Hồn Tích Đất Việt. Tái sinh từ nhựa, kể chuyện bằng di sản.</p>
+      <p lang="en">A collectible cultural storytelling platform powered by physical souvenirs.</p>
+    </div>
+  </footer>
+
+  <script src="assets/main.js" defer></script>
+</body>
+</html>
