@@ -255,17 +255,32 @@ a { color: inherit; }
   min-width: 0;
 }
 .wordmark {
-  font-family: var(--serif);
-  font-weight: 600;
-  font-size: 1.6rem;
-  letter-spacing: -0.01em;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  flex: none;
+  height: 3.75rem;
   text-decoration: none;
-  color: var(--ink);
-  white-space: nowrap;
-  min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
+.brand-emblem {
+  display: block;
+  height: 100%;
+  width: auto;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+/* Header swaps emblem tone: ivory over the dark hero, ink once scrolled. */
+.site-header .brand-emblem { transition: opacity 0.3s var(--ease-out); }
+.site-header .brand-emblem--ink {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: auto;
+  opacity: 0;
+}
+.site-header.is-scrolled .brand-emblem--light { opacity: 0; }
+.site-header.is-scrolled .brand-emblem--ink { opacity: 1; }
 .btn-nav { flex: none; }
 .nav-links {
   display: flex;
@@ -772,7 +787,7 @@ a { color: inherit; }
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 .footer-brand { max-width: 24rem; }
-.wordmark-light { color: #fff; font-size: 1.5rem; display: inline-block; margin-bottom: 1rem; }
+.wordmark-light { height: 5rem; margin-bottom: 1.1rem; }
 .footer-brand p { font-family: var(--serif); font-style: italic; font-size: 1.2rem; color: rgba(255, 255, 255, 0.82); }
 .footer-col { display: flex; flex-direction: column; gap: 0.85rem; }
 .footer-col h4 {
@@ -839,7 +854,7 @@ a { color: inherit; }
   .hero-actions .btn { width: 100%; }
   .story-foot { justify-content: flex-start; }
   .nav { gap: 0.75rem; }
-  .wordmark { font-size: 1.25rem; }
+  .wordmark { height: 2.9rem; }
   .btn-nav { padding: 0.55rem 1.1rem; font-size: 0.82rem; }
   .btn-nav .lbl-full { display: none; }
   .btn-nav .lbl-short { display: inline; }
