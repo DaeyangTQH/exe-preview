@@ -33,6 +33,72 @@
     syncToggle();
   }
 
+  /* QR story media: real controls once video/audio files are inserted */
+  var storyVideo = document.querySelector("[data-story-video]");
+  if (storyVideo) {
+    var storyVideoFrame = storyVideo.closest(".story-video-frame");
+    var hasStoryVideo =
+      storyVideo.currentSrc ||
+      storyVideo.getAttribute("src") ||
+      storyVideo.querySelector("source[src]");
+
+    if (storyVideoFrame && hasStoryVideo) {
+      storyVideoFrame.classList.add("has-media");
+    }
+  }
+
+  var storyAudio = document.querySelector("[data-story-audio]");
+  var storyAudioToggle = document.querySelector("[data-story-audio-toggle]");
+  if (storyAudio && storyAudioToggle) {
+    var storyAudioTitle = document.querySelector("[data-story-audio-title]");
+    var storyAudioStatus = document.querySelector("[data-story-audio-status]");
+    var hasStoryAudio =
+      storyAudio.currentSrc ||
+      storyAudio.getAttribute("src") ||
+      storyAudio.querySelector("source[src]");
+
+    var formatDuration = function (seconds) {
+      var total = Math.max(0, Math.round(seconds || 0));
+      var minutes = Math.floor(total / 60);
+      var rest = total % 60;
+      return minutes + ":" + String(rest).padStart(2, "0");
+    };
+
+    var syncStoryAudio = function () {
+      var playing = !storyAudio.paused && !storyAudio.ended;
+      storyAudioToggle.dataset.state = playing ? "playing" : "paused";
+      storyAudioToggle.setAttribute("aria-pressed", String(playing));
+      if (storyAudioStatus) {
+        storyAudioStatus.textContent = playing ? "Đang phát giọng kể Tháp Rùa" : "Kể chuyện Tháp Rùa";
+      }
+    };
+
+    if (!hasStoryAudio) {
+      storyAudioToggle.disabled = true;
+      storyAudioToggle.setAttribute("aria-disabled", "true");
+    } else {
+      if (storyAudioTitle) storyAudioTitle.textContent = "Audio · 1 phút";
+      storyAudioToggle.addEventListener("click", function () {
+        if (storyAudio.paused || storyAudio.ended) {
+          var audioPlay = storyAudio.play();
+          if (audioPlay && typeof audioPlay.catch === "function") audioPlay.catch(function () {});
+        } else {
+          storyAudio.pause();
+        }
+        syncStoryAudio();
+      });
+      storyAudio.addEventListener("play", syncStoryAudio);
+      storyAudio.addEventListener("pause", syncStoryAudio);
+      storyAudio.addEventListener("ended", syncStoryAudio);
+      storyAudio.addEventListener("loadedmetadata", function () {
+        if (storyAudioTitle && Number.isFinite(storyAudio.duration)) {
+          storyAudioTitle.textContent = "Audio · " + formatDuration(storyAudio.duration);
+        }
+      });
+      syncStoryAudio();
+    }
+  }
+
   /* Sticky header border once scrolled past the hero top */
   if (header) {
     var onScroll = function () {

@@ -249,38 +249,69 @@
       </div>
     </section>
 
-    <!-- QR STORY PREVIEW -->
+    <!-- QR STORY PAGE -->
     <section id="story" class="section story" aria-labelledby="story-title">
       <div class="container story-grid">
-        <figure class="story-photo" data-reveal>
-          <img src="assets/img/story-hoi-an.jpg" alt="Phố cổ Hội An lúc hoàng hôn, đèn lồng lụa đỏ và vàng soi bóng xuống dòng sông Thu Bồn." width="1536" height="1024" loading="lazy" decoding="async" />
-          <figcaption>Địa danh thật, đứng sau vật thể bạn cầm trên tay.</figcaption>
-        </figure>
+        <div class="story-media-stack" data-reveal>
+          <figure class="story-video-card">
+            <div class="story-video-frame">
+              <video
+                class="story-video"
+                data-story-video
+                controls
+                playsinline
+                preload="metadata"
+                poster="assets/img/model-ho-guom.png"
+                aria-label="Video kể chuyện về Tháp Rùa Hồ Gươm"
+              >
+                <source src="Thap_rua.mp4" type="video/mp4" />
+              </video>
+              <div class="story-media-pending" aria-hidden="true">
+                <span>Video story</span>
+                <strong>Video Tháp Rùa</strong>
+              </div>
+            </div>
+            <figcaption>Video mở đầu trang QR về Tháp Rùa và không gian Hồ Gươm.</figcaption>
+          </figure>
+
+          <figure class="story-photo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Thap_Rua_%28Tottoise%29_Tower%2C_Hoan_Kiem_Lake%2C_Hanoi_%281%29_%2838442367376%29.jpg/960px-Thap_Rua_%28Tottoise%29_Tower%2C_Hoan_Kiem_Lake%2C_Hanoi_%281%29_%2838442367376%29.jpg" alt="Tháp Rùa nằm trên gò nhỏ giữa Hồ Gươm, Hà Nội, bao quanh bởi mặt nước và cây xanh." width="960" height="632" loading="lazy" decoding="async" />
+            <figcaption>Tháp Rùa thật giữa Hồ Gươm — hình ảnh đứng sau mô hình bạn cầm trên tay.</figcaption>
+          </figure>
+        </div>
 
         <div class="story-panel" data-reveal>
           <header class="story-panel-head">
             <p class="kicker">Trang câu chuyện QR</p>
-            <h2 id="story-title" class="title">Hội An</h2>
-            <p class="story-sub">Khi quét mã, đây là thứ mở ra — không phải một trang web, mà một câu chuyện.</p>
+            <h2 id="story-title" class="title">Tháp Rùa · Hồ Gươm</h2>
+            <p class="story-sub">Khi quét mã trên mô hình, khách mở ra video, audio và câu chuyện ngắn về biểu tượng nằm giữa trái tim Hà Nội.</p>
           </header>
 
-          <ol class="timeline" aria-label="Dòng thời gian Hội An">
-            <li><span class="t-year">TK 15</span><span class="t-text">Thương cảng quốc tế sầm uất bên sông Thu Bồn.</span></li>
-            <li><span class="t-year">TK 17</span><span class="t-text">Người Nhật dựng Chùa Cầu nối hai khu phố.</span></li>
-            <li><span class="t-year">1999</span><span class="t-text">UNESCO công nhận Di sản Văn hóa Thế giới.</span></li>
+          <div class="story-audio-card">
+            <audio data-story-audio preload="metadata"></audio>
+            <button type="button" class="audio-row" data-story-audio-toggle aria-label="Nghe câu chuyện audio một phút về Tháp Rùa Hồ Gươm">
+              <span class="audio-play" aria-hidden="true"></span>
+              <span class="audio-text">
+                <strong data-story-audio-title>Audio · chờ file</strong>
+                <small data-story-audio-status>Sẵn sàng chèn giọng kể Tháp Rùa</small>
+              </span>
+              <span class="audio-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+            </button>
+          </div>
+
+          <ol class="timeline" aria-label="Dòng thời gian Tháp Rùa Hồ Gươm">
+            <li><span class="t-year">TK 15</span><span class="t-text">Truyền thuyết vua Lê Lợi trả gươm thần cho Rùa Vàng gắn Hồ Gươm với tên gọi Hoàn Kiếm.</span></li>
+            <li><span class="t-year">1886</span><span class="t-text">Tháp Rùa được xây trên gò Rùa, trở thành điểm nhấn giữa mặt hồ.</span></li>
+            <li><span class="t-year">Hôm nay</span><span class="t-text">Hình ảnh Tháp Rùa là một biểu tượng quen thuộc của Hà Nội trong ký ức người Việt.</span></li>
           </ol>
 
           <div class="funfact">
             <span class="funfact-label">Fun fact</span>
-            <p>Hơn 1.000 đèn lồng lụa được thắp mỗi đêm rằm, khi cả phố cổ tắt điện.</p>
+            <p>Tên Hồ Hoàn Kiếm nghĩa là hồ trả gươm, bắt nguồn từ truyền thuyết thanh gươm Thuận Thiên.</p>
           </div>
 
           <div class="story-foot">
-            <button type="button" class="audio-row" aria-label="Nghe câu chuyện audio một phút về Hội An">
-              <span class="audio-play" aria-hidden="true"></span>
-              <span class="audio-text"><strong>Audio · 1 phút</strong><small>Kể chuyện Hội An</small></span>
-              <span class="audio-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
-            </button>
+            <p class="story-scan-note">Mỗi mô hình có một mã QR riêng, dẫn thẳng tới trang kể chuyện của địa danh đó.</p>
             <div class="qr" aria-hidden="true">
               <svg viewBox="0 0 100 100" role="img" width="76" height="76">
                 <rect width="100" height="100" fill="#ffffff"/>
